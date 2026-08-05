@@ -1,0 +1,17 @@
+Agentic AI is an artificial intelligence approach where an AI system can make decisions, use tools, and complete tasks with some level of autonomy.
+
+A normal chatbot usually answers only based on the current question. An agentic chatbot can decide what action is needed, such as searching a knowledge base, calculating math, checking the current date, or calling an external system.
+
+RAG stands for Retrieval Augmented Generation. In RAG, the system first retrieves relevant information from a knowledge base and then sends that context to a language model to generate a grounded answer.
+
+A vector database stores text as embeddings. Embeddings are numerical representations of meaning. This allows semantic search, where the system searches by meaning instead of only exact keywords.
+
+ChromaDB is a vector database commonly used in local RAG projects. It stores document chunks, embeddings, and metadata. A chatbot can query ChromaDB to retrieve the most relevant chunks for a user question.
+
+LangGraph is useful for agentic AI because it lets developers build workflows as graphs. Each node can perform a task, such as routing, retrieving information, calculating, or generating a response.
+
+A calculator tool is useful because language models may make mistakes in arithmetic. For reliable math, the agent should call a dedicated calculator function.
+
+A date tool is useful because language models may not know the current runtime date. For date-related questions, the agent should call the system date function.
+
+In this project, the agent will decide whether to use the knowledge base, calculator, date tool, or direct LLM answer based on the user question.
